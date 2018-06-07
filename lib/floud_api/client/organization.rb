@@ -12,8 +12,8 @@ module FloudApi
         response.parsed_response
       end
 
-      def update_organization(options = {})
-        response = self.class.put(@api_prefix + 'Organizations', body: options)
+      def update_organization(id, options = {})
+        response = self.class.put(@api_prefix + 'Organizations', query: {id: id }, body: options)
         response.parsed_response
       end
 

@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    floud_api (0.0.3)
+    floud_api (0.0.4)
       httmultiparty
       json
 
